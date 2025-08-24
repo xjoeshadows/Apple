@@ -39,6 +39,6 @@ on openApplication(appName, appArgs)
 		set argString to argString & " " & arg
 	end repeat
 	
-	-- Use the 'do shell script' command to directly execute the Brave Browser binary with arguments
+	-- Use the 'do shell script' command to directly execute the app's binary with arguments
 	do shell script quoted form of "/Applications/YourApp.app/Contents/MacOS/YourAppBinary" & argString
 end openApplication
