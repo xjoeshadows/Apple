@@ -1,10 +1,10 @@
 -- Define the application you want to open
 set appName to "AppName" -- Replace with the name of your app
 
--- Function to check if Proton VPN is connected
+-- Function to check if your VPN is connected
 on isVPNConnected()
 	try
-		set vpnStatus to do shell script "scutil --nc status 'ProtonVPN'" -- Ensure the name matches exactly
+		set vpnStatus to do shell script "scutil --nc status 'VPNNameHere'" -- Ensure the name matches exactly
 		-- Check for specific lines in the output
 		if vpnStatus starts with "Connected" then
 			return true
